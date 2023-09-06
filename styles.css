@@ -254,6 +254,7 @@ h3 {
 .receta img {
     object-fit: cover;
     height: 300px;
+    padding:0;
 }
 
 .receta button{
