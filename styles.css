@@ -1,0 +1,343 @@
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-overflow: ellipsis;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+    color: white;
+}
+#barra{
+    background-color: transparent!important;
+}
+
+#contenidonav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-image: url('IMAGENES/Central/imagenCentral.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#inicio {
+    height: 60vh;
+    position: relative;
+}
+
+#presentacion {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    top: 0;
+    bottom: 0;
+}
+
+#central {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    position: relative;
+    padding: 6vi;
+}
+
+#central a {
+    align-self: center !important;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+
+}
+
+#conocenos {
+    background-color: black;
+    opacity: 60%;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(78, 78, 78);
+    text-align: center;
+    height: 15vh;
+    margin-bottom: 0 !important;
+}
+
+h3 {
+    font-weight: lighter;
+    color: #BCA177;
+}
+
+#tradicional {
+    background-color: black;
+}
+
+.imgproducto {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.col-md-6 {
+    padding: 0 !important;
+}
+
+.pcolor {
+    font-weight: bold;
+    color: #BCA177;
+}
+
+.info {
+    background-color: black;
+    color: #BCA177 !important;
+    border-color: #BCA177;
+    font-weight: bold;
+}
+
+.prod {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5vi;
+}
+
+.texto {
+    margin-left: 10vh;
+    margin-right: 10vh;
+    text-align: left;
+}
+
+#sinazucar {
+    background-color: black;
+}
+
+#choconut {
+    background-color: black;
+}
+
+#alfajores {
+    background-color: #BCA177;
+    height: 100%;
+}
+
+.h3marron {
+    color: #7C4D17;
+}
+
+.pcolor2 {
+    color: #7C4D17;
+    font-weight: bold;
+}
+
+.info2 {
+    background-color: #BCA177;
+    color: #7C4D17 !important;
+    border-color: #7C4D17;
+    font-weight: bold;
+}
+
+.imgproducto2 {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+    margin: 2vi;
+}
+
+#fondoalfajores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#salud {
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(78, 78, 78);
+}
+
+#saludlista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+#saludlista li {
+    padding-top: 1vh;
+    padding-left: 3vi;
+    padding-right: 3vi;
+}
+
+.icon1 {
+    height: 10vi;
+    filter: invert(0.6) sepia(3) hue-rotate(10deg);
+}
+
+.resaltado {
+    font-size: 4vh;
+
+
+}
+
+.pcolor3 {
+    font-weight: lighter;
+    color: #BCA177;
+    padding-top: 2vh;
+
+}
+
+.pcolor4 {
+    color: #7C4D17;
+}
+
+#formulario {
+    display: flex;
+    align-items: center;
+
+}
+
+#listaformulario li {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactotexto {
+    padding-left: 2.5vi;
+}
+
+#contacto {
+    margin-top: 2vh;
+}
+
+#recetas {
+    background-color: rgb(78, 78, 78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#recetas .col-md-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.receta {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 2vi;
+    overflow: hidden;
+    background-color: #BCA177;
+    height:fit-content;
+}
+
+.receta img {
+    object-fit: cover;
+    height: 300px;
+}
+
+.receta button{
+    margin: 2vh;
+    padding: 1vh;;
+}
+
+.textoreceta {
+    height:fit-content;
+    font-size: 1em;
+}
+
+.textoreceta p {
+    padding: 0 2vi 0 2vi;
+    height: 5.5em;
+}
+
+footer {
+    background-color: black;
+
+}
+
+footer .row {
+    padding: 2vh 0 0 0;
+}
+
+footer img {
+    height: 20vh;
+}
+
+footer .col-md-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.red {
+    height: 5vh;
+    filter: invert(1);
+    margin: 1vh 0 1vh 0;
+}
+
+footer a {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: lighter;
+    color: #BCA177;
+}
+
+#logopie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#creditos {
+    background-color: #BCA177;
+}
+
+@media (max-width: 768px) {
+    .receta{
+        width:400px ;
+    }
+    #barra{
+        background-color: black!important;
+    }
+    #imgddl{
+        order:-1;
+    }
+    .navbar-toggler{
+        filter: invert(1);
+    }
+
+}
+@media (max-height: 520px ){
+    .textoreceta p{
+        padding: 0 2vi 0 2vi;
+        height:4rem
+    }
+    .textoreceta {
+        height:fit-content;
+        font-size: 0.9em;
+    }
+}
