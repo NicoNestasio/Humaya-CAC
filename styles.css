@@ -5,6 +5,10 @@
     text-overflow: ellipsis;
     font-family: 'Montserrat', sans-serif;
 }
+.row{
+    margin: 0;
+    padding: 0;
+}
 
 .nav-link {
     color: white;
