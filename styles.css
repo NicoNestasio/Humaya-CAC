@@ -233,11 +233,12 @@ h3 {
     align-items: center;
     justify-content: center;
 }
+/* CAMBIAR */
 #recetas .col-md-4{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    flex-direction: column;
 }
 .receta {
     display: flex;
@@ -248,13 +249,21 @@ h3 {
     margin: 2vi;
     overflow: hidden;
     background-color: #BCA177;
-    height:fit-content;
+    height:70vh;
+    width: 25vi
 }
-
+.imgreceta{
+    flex: 1;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 50%;
+}
 .receta img {
     object-fit: cover;
-    height: 300px;
     padding:0;
+    width: 500px;
 }
 
 .receta button{
@@ -265,12 +274,15 @@ h3 {
 .textoreceta {
     height:fit-content;
     font-size: 1em;
+    height: 50%;
+    padding-top: 2vh;
 }
 
 .textoreceta p {
     padding: 0 2vi 0 2vi;
     height: 5.5em;
 }
+/* FIN CAMBIAR */
 
 footer {
     background-color: black;
