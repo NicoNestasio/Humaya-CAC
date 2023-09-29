@@ -233,7 +233,6 @@ h3 {
     align-items: center;
     justify-content: center;
 }
-/* CAMBIAR */
 #recetas .col-md-4{
     display: flex;
     align-items: center;
@@ -249,8 +248,9 @@ h3 {
     margin: 2vi;
     overflow: hidden;
     background-color: #BCA177;
-    height:70vh;
-    width: 25vi
+    height:80vh;
+    width: 30vi;
+    text-overflow: ellipsis;
 }
 .imgreceta{
     flex: 1;
@@ -258,37 +258,70 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    height: 50%;
 }
 .receta img {
     object-fit: cover;
     padding:0;
-    width: 500px;
+    width: 550px;
 }
-
+.contenidorec{
+    height: 70%;
+}
 .receta button{
     margin: 2vh;
     padding: 1vh;;
 }
 
 .textoreceta {
-    height:fit-content;
-    font-size: 1em;
-    height: 50%;
+    height: calc(25em - 10vi);
     padding-top: 2vh;
+    text-overflow: ellipsis;
 }
 
 .textoreceta p {
-    padding: 0 2vi 0 2vi;
-    height: 5.5em;
+    height: 70%;
+    font-size:calc(1rem + 0.2vi) ;
+    padding: 1vh 2vi 0 2vi;
+    height: 5em;
+    text-overflow: ellipsis;
 }
-/* FIN CAMBIAR */
+.boton{
+    height: 20%;
+}
+.modal-header{
+    background-color: black;
+    color:#BCA177;
+}
+.modal-footer{
+    background-color: black;
+}
+.modal-body{
+    height: fit-content;
+    background-color: #BCA177;
+    color: #7C4D17!important;
+
+}
+.modal-body h3{
+    color: #7C4D17;
+    font-weight: bold;
+}
+.modal-body p{
+    font-size: 1em;
+    height: 50%;
+    text-align: left;
+}
+.modal-body li {
+    text-align: left;
+    list-style: circle;
+}
 
 footer {
     background-color: black;
 
 }
-
+#contenidopie{ 
+    padding-top: 2vh!important;
+}   
 footer .row {
     padding: 2vh 0 0 0;
 }
@@ -335,7 +368,16 @@ h4 {
 
 @media (max-width: 768px) {
     .receta{
-        width:400px ;
+        width:500px ;
+    }
+    .receta img {
+        width: 500px;
+    }
+    .textoreceta {
+        height: 45%;
+    }
+    .boton{
+        height: 25%;
     }
     #barra{
         background-color: black!important;
@@ -346,6 +388,10 @@ h4 {
     .navbar-toggler{
         filter: invert(1);
     }
+    #menupie{
+        display: none;
+    }
+    
 
 }
 @media (max-height: 520px ){

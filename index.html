@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="index.js"></script>
     <title>Humaya</title>
 </head>
@@ -19,27 +21,28 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-center" id="barra">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="IMAGENES\Logo\LogoHumaya100x100.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#productos">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#pie">Locales</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contactanos">Contactos</a>
-              </li>
-            </ul>
-          </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pie">Locales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactanos">Contactos</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
     <div id="inicio">
         <div id="presentacion">
             <section class="col-md-5" id="central">
@@ -128,13 +131,13 @@
         </section>
     </div>
     <div>
-        <h2 class="row" >Contáctanos</h2>
+        <h2 class="row">Contáctanos</h2>
         <section class="row" id="contactanos">
             <div class="col-md-6">
                 <img class="imgproducto" src="IMAGENES/productos humaya.jfif" alt="">
             </div>
             <div class="col-md-6" id="contacto">
-                <p  id="contactotexto">Déjanos tu consulta y nuestro personal se pondrá en contacto a la
+                <p id="contactotexto">Déjanos tu consulta y nuestro personal se pondrá en contacto a la
                     brevedad.</p>
                 <form id='formulario' action="">
                     <ul id="listaformulario">
@@ -143,11 +146,11 @@
                             <input type="text" name="nombre" id="nombre">
                         </li>
                         <li>
-                            <label  for="email">E-MAIL:</label>
+                            <label for="email">E-MAIL:</label>
                             <input type="text" name="email" id="email">
                         </li>
                         <li>
-                            <label  for="consulta">CONSULTA:</label>
+                            <label for="consulta">CONSULTA:</label>
                             <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
                         </li>
                         <li><a href=""><button class="info2">ENVIAR</button></a></li>
@@ -157,7 +160,7 @@
         </section>
     </div>
     <div>
-        <h2 class="row" >Recetas</h2>
+        <h2 class="row">Recetas</h2>
         <div class="row" id="recetas">
             <div class="col-md-4">
                 <div class="receta">
@@ -165,28 +168,84 @@
                         <img id="imgreceta1" src="" alt="No funciona la imagen.">
                     </div>
                     <div class="textoreceta">
-                        <div class="row">
-                            <h3 id='hreceta1'class="h3marron"></h3>
-                            <p>Una deliciosa opción para acompañar las meriendas, ese antojo de media noche o compartir
+                        <div class="contenidorec">
+                            <h3 id='hreceta1' class="h3marron"></h3>
+                            <p id="preceta1">Una deliciosa opción para acompañar las meriendas, ese antojo de media
+                                noche o compartir
                                 con amigos.</p>
                         </div>
-                            <a href=""><button class="info2">PREPARACIÓN</button></a>
+                        <div class="boton">
+                            <button class="info2" data-bs-toggle="modal"
+                                data-bs-target="#preparacion1">PREPARACIÓN</button>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="preparacion1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Preparación</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Ingredientes</h3>
+                                        <ul id="ingredientesr1">
+
+                                        </ul>
+                                        <h3>Instrucciones</h3>
+                                        <p id="instruccionesr1"></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="receta">
                     <div class="imgreceta">
-                        <img id="imgreceta2" src="" alt="">
+                        <img id="imgreceta2" src="" alt="No funciona la imagen.">
                     </div>
                     <div class="textoreceta">
-                        <div class="row">
-                            <h3 id='hreceta2'class="h3marron"></h3>
-                            <p>Las galletitas más tiernas y ricas, rellenas de dulce de leche, ideales para el mate y la
+                        <div class="contenidorec">
+                            <h3 id='hreceta2' class="h3marron"></h3>
+                            <p id="preceta2">Las galletitas más tiernas y ricas, rellenas de dulce de leche, ideales
+                                para el mate y la
                                 hora del té</p>
                         </div>
-                        <div class="row">
-                            <a href=""><button class="info2">PREPARACIÓN</button></a>
+                        <div class="boton">
+                            <button class="info2" data-bs-toggle="modal"
+                                data-bs-target="#preparacion2">PREPARACIÓN</button>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="preparacion2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Preparación</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Ingredientes</h3>
+                                        <ul id="ingredientesr2">
+
+                                        </ul>
+                                        <h3>Instrucciones</h3>
+                                        <p id="instruccionesr2"></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -194,16 +253,43 @@
             <div class="col-md-4">
                 <div class="receta">
                     <div class="imgreceta">
-                        <img id="imgreceta3" src="" alt="">
+                        <img id="imgreceta3" src="" alt="No funciona la imagen.">
                     </div>
                     <div class="textoreceta">
-                        <div class="row">
+                        <div class="contenidorec">
                             <h3 id='hreceta3' class="h3marron"></h3>
-                            <p>La torta de tres capas más sabrosa del mundo, combina una base de vainilla, dulce de
+                            <p id="preceta3">La torta de tres capas más sabrosa del mundo, combina una base de vainilla,
+                                dulce de
                                 leche y cubierta de choconutt.</p>
                         </div>
-                        <div class="row">
-                            <a href=""><button class="info2">PREPARACIÓN</button></a>
+                        <div class="boton">
+                            <button class="info2" data-bs-toggle="modal"
+                                data-bs-target="#preparacion3">PREPARACIÓN</button>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="preparacion3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Preparación</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Ingredientes</h3>
+                                        <ul id="ingredientesr3">
+
+                                        </ul>
+                                        <h3>Instrucciones</h3>
+                                        <p id="instruccionesr3"></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -212,11 +298,11 @@
     </div>
     <footer class="row" id="pie">
         <h2 class="row">Encontranos en:</h2>
-        <div class="row">
+        <div class="row" id="contenidopie">
             <div class="col-md-3" id="logopie">
-                <picture><img src="IMAGENES\Logo\LogoHumaya100x100.png" alt=""></picture>
+                <picture><img src="IMAGENES\Logo\LogoHumaya100x100.png" alt="Logo Humaya"></picture>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2" id="menupie">
                 <ul>
                     <li>
                         <h4>MENÚ</h4>
